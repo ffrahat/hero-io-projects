@@ -14,11 +14,11 @@ const Installation = () => {
     
     const handleShort = () => {
   if (shorted === 'low-high') {
-    return [...installed].sort((a, b) => a.size - b.size);
+    return [...installed].sort((a, b) => a.downloads - b.downloads);
   } 
   else if (shorted === 'high-low') {
     console.log('ok');
-    return [...installed].sort((a, b) => b.size - a.size);
+    return [...installed].sort((a, b) => b.downloads - a.downloads);
   } 
   else {
     return [...installed];

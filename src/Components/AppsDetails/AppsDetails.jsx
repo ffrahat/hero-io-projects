@@ -6,7 +6,15 @@ import DownloadIcon from "../../assets/icon-downloads.png";
 import Ratingcon from "../../assets/icon-ratings.png";
 import Reviewcon from "../../assets/icon-review.png";
 import { toast, ToastContainer } from "react-toastify";
-import { Bar, BarChart, CartesianGrid, Tooltip, XAxis, YAxis } from "recharts";
+import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
 
 const AppsDetails = () => {
   const { id } = useParams();
@@ -30,7 +38,8 @@ const AppsDetails = () => {
   } = app;
 
   // console.log(ratings);
-  const inMillion = (downloads / 1000000).toFixed(2) + " M";
+  const inMillion = (downloads / 1000000).toFixed(2) + " M ";
+  const inK = (reviews / 1000).toFixed(0) + " K ";
   const handleInstall = () => {
     setInstall(true);
     const existingList = JSON.parse(localStorage.getItem("installed"));
@@ -61,10 +70,10 @@ const AppsDetails = () => {
             <div className="w-full mt-5 border-b-1 border-gray-300"></div>
           </div>
 
-          <div className="flex items-center gap-5 md:gap-15 text-left">
+          <div className="flex items-center justify-between md:justify-start gap-5 md:gap-15 text-left">
             <div className="space-y-2">
               <img src={DownloadIcon} alt="" />
-              <p>Downloads</p>
+              <p>Download Apps </p>
               <h1 className="font-bold text-2xl">{inMillion}</h1>
             </div>
             <div className="space-y-2">
@@ -75,7 +84,7 @@ const AppsDetails = () => {
             <div className="space-y-2">
               <img src={Reviewcon} alt="" />
               <p>Total Reviews</p>
-              <h1 className="font-bold text-2xl">{reviews}</h1>
+              <h1 className="font-bold text-2xl">{inK}</h1>
             </div>
           </div>
 
@@ -93,17 +102,14 @@ const AppsDetails = () => {
       <div className="mt-10">
         <h1 className="font-bold text-2xl my-2">Ratings: </h1>
         <div className="w-full h-[300px] text-black">
-          <BarChart
-            width={500}
-            height={250}
-            data={[...ratings].reverse()} // 5★ উপরে আনার জন্য
-            layout="vertical"
-          >
-            <YAxis dataKey="name" type="category" stroke="#000" />
-            <XAxis type="number" stroke="#000" />
-            <Tooltip />
-            <Bar dataKey="count" fill="green" barSize={30} />
-          </BarChart>
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart data={[...ratings].reverse()} layout="vertical">
+              <YAxis dataKey="name" type="category" stroke="#000" />
+              <XAxis type="number" stroke="#000" />
+              <Tooltip />
+              <Bar dataKey="count" fill="#FF8811" barSize={30} />
+            </BarChart>
+          </ResponsiveContainer>
         </div>
       </div>
 
