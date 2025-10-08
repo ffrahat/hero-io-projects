@@ -2,9 +2,12 @@ import React from "react";
 import DownloadIcon from "../../assets/icon-downloads.png";
 import Ratingcon from "../../assets/icon-ratings.png";
 
-const InstallationCard = ({ app }) => {
-  const { title, image, downloads, size, ratingAvg } = app;
+const InstallationCard = ({ app, handleUninstall }) => {
+  const { title, image, downloads, size, ratingAvg, id } = app;
   const inMillion = (downloads / 100000).toFixed(2) + ' M';
+  const handleUnsitallBtn = handleUninstall;
+
+  
   // console.log(inMillion)
   return (
     <div className="bg-white p-2 md:p-5 flex md:items-center items-left justify-between flex-col md:flex-row mb-5 rounded-md">
@@ -31,7 +34,7 @@ const InstallationCard = ({ app }) => {
       </div>
 
       <div className="mt-3 md:mt-0">
-        <button className="btn btn-success text-white">Uninstall</button>
+        <button onClick={()=>handleUnsitallBtn(id)} className="btn bg-green-500 text-white">Uninstall</button>
       </div>
     </div>
   );

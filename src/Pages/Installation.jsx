@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import InstallationCard from "../Components/InstallationCard/InstallationCard";
+import NoResultFound from "../Components/Error/NoResultFound";
 
 const Installation = () => {
   const savedList = JSON.parse(localStorage.getItem("installed"));
@@ -22,10 +23,21 @@ const Installation = () => {
   else {
     return [...installed];
   }
-};
+  };
+  
+  const handleUninstall = (id) => {
+    const existingList = JSON.parse(localStorage.getItem('installed'));
+        let updatedList = [];
+        if (existingList) {
+          updatedList = existingList.filter(p => p.id !== id)
+          localStorage.setItem('installed', JSON.stringify(updatedList))
+          setInstalled(updatedList)
+        }
+  }
 
   return (
-    <div>
+    <div >
+      
       <div className="text-center space-y-3 mb-10">
         <h1 className="text-2xl md:text-4xl font-semibold">
           Your Installed Apps <i className='bx bx-gift text-[#713ae7]'  ></i> 
@@ -35,7 +47,7 @@ const Installation = () => {
         </p>
       </div>
 
-      <div>
+      <div className={`${installed.length===0? 'hidden': 'block'}`}>
         <div className="flex items-center justify-between mb-5">
           <h1 className="text-2xl font-semibold ">
             {installed.length} Apps Found
@@ -51,8 +63,11 @@ const Installation = () => {
       </div>
       <div>
         {handleShort().map((app) => (
-          <InstallationCard key={app.id} app={app}></InstallationCard>
+          <InstallationCard key={app.id} app={app} handleUninstall={handleUninstall}></InstallationCard>
         ))}
+      </div>
+      <div className={`min-h-[400px] flex items-center justify-center ${installed.length===0? 'flex': 'hidden'}`}>
+        <NoResultFound></NoResultFound>
       </div>
     </div>
   );
