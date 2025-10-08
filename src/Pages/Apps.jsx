@@ -3,11 +3,12 @@ import useAllApps from "../Hooks/AllApps";
 import AppsCard from "../Components/AppsCard/AppsCard";
 import { Link } from "react-router";
 import AppError from "../Components/Error/AppError";
+import Loading from "../Components/Loading/Loading";
 
 const Apps = () => {
   const [search, setSearch] = useState("");
   const { appsData, loading, error } = useAllApps();
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <Loading></Loading>;
   console.log(appsData);
     if (error) return <p>Error Hoise</p>;
     
@@ -24,7 +25,7 @@ const Apps = () => {
       <div>
         <div className="text-center space-y-3 mb-5">
           <h1 className="text-2xl md:text-4xl font-semibold">
-            Our All Applications
+            Our All Applications <i class="fa-brands fa-app-store text-[#713ae7]"></i>
           </h1>
           <p className="text-gray-500">
             Explore All Apps on the Market developed by us. We code for Millions

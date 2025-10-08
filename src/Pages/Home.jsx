@@ -17,9 +17,9 @@ const Home = () => {
   return (
     <div className="">
       <div className="text-center">
-        <h1 className="font-semibold text-2xl md:text-4xl mb-4">
+        <h1 className="font-bold text-2xl md:text-4xl lg:text-5xl mb-4">
           We Build <br />{" "}
-          <span className="text-[#713ae7] font-bold leading-10 md:leading-15">
+          <span className="text-[#713ae7] leading-10 md:leading-17">
             Productive
           </span>{" "}
           Apps

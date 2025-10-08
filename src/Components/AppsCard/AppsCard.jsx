@@ -4,7 +4,7 @@ import Ratingcon from "../../assets/icon-ratings.png";
 import { Link } from "react-router";
 
 const AppsCard = ({ app }) => {
-  const { title, image, downloads, id } = app;
+  const { title, image, downloads, id, ratingAvg } = app;
 const inMillion = (downloads / 1000000).toFixed(2) + " M";
 
   return (
@@ -25,8 +25,7 @@ const inMillion = (downloads / 1000000).toFixed(2) + " M";
             {inMillion}
           </p>
           <p className=" flex items-center justify-center bg-amber-100 px-2">
-            {" "}
-            <img className="w-[15px] h-[15px] mr-2" src={Ratingcon} alt="" />5
+            <img className="w-[15px] h-[15px] mr-2" src={Ratingcon} alt="" />{ratingAvg}
           </p>
         </div>
       </div>

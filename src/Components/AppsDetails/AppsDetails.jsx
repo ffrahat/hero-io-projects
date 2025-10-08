@@ -24,13 +24,22 @@ const AppsDetails = () => {
     ratingAvg,
       size,
     
-  } = app;
+  } = app
     // console.log(ratings);
     const inMillion = (downloads / 1000000).toFixed(2) + " M";
 
 
-    const handleInstall = () => {
-        localStorage.setItem('wishlish', JSON.stringify(app))
+  const handleInstall = () => {
+    const existingList = JSON.parse(localStorage.getItem('installed'));
+    let updatedList = [];
+    if (existingList) {
+      const isDuplicate = existingList.some(p => p.id === app.id)
+      if(isDuplicate) return toast.warning('Already Installed...!')
+      updatedList = [...existingList, app]
+    } else {
+      updatedList.push(app)
+    }
+        localStorage.setItem('installed', JSON.stringify(updatedList))
         toast.success(title + ' Install Successfully !')
     }
 
@@ -49,7 +58,7 @@ const AppsDetails = () => {
                       <div className="w-full mt-5 border-b-1 border-gray-300"></div>
           </div>
 
-          <div className="flex items-center gap-10 md:gap-15 text-left">
+          <div className="flex items-center gap-5 md:gap-15 text-left">
             <div className="space-y-2">
               <img src={DownloadIcon} alt="" />
               <p>Downloads</p>
