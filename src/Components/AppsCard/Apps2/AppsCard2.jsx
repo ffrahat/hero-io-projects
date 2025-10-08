@@ -1,15 +1,13 @@
 import React from "react";
 import DownloadIcon from "../../assets/icon-downloads.png";
 import Ratingcon from "../../assets/icon-ratings.png";
-import { Link } from "react-router";
 
 const AppsCard = ({ app }) => {
-  const { title, image, downloads, id } = app;
+  const { title, image, downloads } = app;
 const inMillion = (downloads / 1000000).toFixed(2) + " M";
 
   return (
-    <Link to={`/apps/${id}`}>
-      <div className="p-2 md:p-4 rounded-xl shadow-sm border border-gray-100">
+    <div className="p-2 md:p-4 rounded-xl shadow-sm border border-gray-100">
       <div className="w-full overflow-hidden">
         <img
           className="mx-auto w-full h-[300px] object-cover transition-transform duration-300 hover:scale-105"
@@ -31,7 +29,6 @@ const inMillion = (downloads / 1000000).toFixed(2) + " M";
         </div>
       </div>
     </div>
-    </Link>
   );
 };
 

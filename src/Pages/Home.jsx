@@ -5,11 +5,12 @@ import AppStoreLogo from "../assets/apps-store.png";
 import useAllApps from "../Hooks/AllApps";
 import AppsCard from "../Components/AppsCard/AppsCard";
 import { Link } from "react-router";
+import Loading from "../Components/Loading/Loading";
 
 const Home = () => {
   const { appsData, loading, error } = useAllApps();
   const fetureApps = appsData.slice(0, 8);
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <Loading />
   console.log(appsData);
   if (error) return <p>Error Hoise</p>;
 

@@ -5,6 +5,7 @@ import Apps from "../Pages/Apps";
 import Installation from "../Pages/Installation";
 import Error from "../Components/Error/Error";
 import 'boxicons';
+import AppsDetails from "../Components/AppsDetails/AppsDetails";
 const router = createBrowserRouter([
     {
         path: '/',
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
             {
                 path: '/installation',
                 Component: Installation
+            },
+            {
+                path: '/apps/:id',
+                Component: AppsDetails
             }
         ]
     }
