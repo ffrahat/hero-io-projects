@@ -1,0 +1,146 @@
+[
+  {
+    "image": "https://i.ibb.co.com/spc1qVcZ/App-Error.png",
+    "title": "Chatly - AI Messenger",
+    "companyName": "NovaTech Labs",
+    "id": 1,
+    "description": "A next-gen AI chat assistant that helps you connect, create, and collaborate seamlessly.",
+    "size": 42,
+    "reviews": 18340,
+    "ratingAvg": 4.6,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 340 },
+      { "name": "2 star", "count": 420 },
+      { "name": "3 star", "count": 1290 },
+      { "name": "4 star", "count": 3450 },
+      { "name": "5 star", "count": 12840 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/DD28D14M/demo-app-1.webp",
+    "title": "TaskFlow",
+    "companyName": "PixelSoft Studio",
+    "id": 2,
+    "description": "Organize your daily tasks, set goals, and stay productive with smart reminders.",
+    "size": 28,
+    "reviews": 8230,
+    "ratingAvg": 4.4,
+    "downloads": 860000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 2300 },
+      { "name": "5 star", "count": 4670 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/7JYPPvLH/demo-app-2.webp",
+    "title": "FitTrack Pro",
+    "companyName": "ActiveMind Inc.",
+    "id": 3,
+    "description": "Track workouts, monitor heart rate, and stay motivated with personalized health goals.",
+    "size": 55,
+    "reviews": 12780,
+    "ratingAvg": 4.7,
+    "downloads": 2200000,
+    "ratings": [
+      { "name": "1 star", "count": 310 },
+      { "name": "2 star", "count": 390 },
+      { "name": "3 star", "count": 940 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 9630 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/d4wF6Mt0/demo-app-3.webp",
+    "title": "SnapPic Editor",
+    "companyName": "Lensify Studios",
+    "id": 4,
+    "description": "A lightweight photo editor with AI filters, one-touch enhancement, and creative tools.",
+    "size": 61,
+    "reviews": 23210,
+    "ratingAvg": 4.5,
+    "downloads": 4100000,
+    "ratings": [
+      { "name": "1 star", "count": 800 },
+      { "name": "2 star", "count": 1020 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 6800 },
+      { "name": "5 star", "count": 12090 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/MkfWpRVm/demo-app-4.webp",
+    "title": "NoteEase",
+    "companyName": "Paperless Apps",
+    "id": 5,
+    "description": "Take quick notes, sync across devices, and stay organized with smart tags and folders.",
+    "size": 19,
+    "reviews": 5210,
+    "ratingAvg": 4.3,
+    "downloads": 570000,
+    "ratings": [
+      { "name": "1 star", "count": 190 },
+      { "name": "2 star", "count": 260 },
+      { "name": "3 star", "count": 720 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 2240 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/TqpcMzqw/demo-app-5.webp",
+    "title": "TravelMate",
+    "companyName": "WanderWorks",
+    "id": 6,
+    "description": "Your ultimate travel companion — explore destinations, plan itineraries, and find deals.",
+    "size": 70,
+    "reviews": 14600,
+    "ratingAvg": 4.8,
+    "downloads": 3300000,
+    "ratings": [
+      { "name": "1 star", "count": 290 },
+      { "name": "2 star", "count": 330 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2900 },
+      { "name": "5 star", "count": 10180 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/rKLt7kLd/demo-app-6.webp",
+    "title": "FinSmart",
+    "companyName": "MoneyMind Ltd.",
+    "id": 7,
+    "description": "Budget tracker and finance planner with AI insights for smarter money management.",
+    "size": 48,
+    "reviews": 8900,
+    "ratingAvg": 4.2,
+    "downloads": 910000,
+    "ratings": [
+      { "name": "1 star", "count": 320 },
+      { "name": "2 star", "count": 510 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 4370 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1555435026-28d8e85f1e1c?w=400",
+    "title": "LearnX",
+    "companyName": "Eduverse Co.",
+    "id": 8,
+    "description": "Interactive courses, flashcards, and AI tutors to help you learn anything, anywhere.",
+    "size": 82,
+    "reviews": 20300,
+    "ratingAvg": 4.9,
+    "downloads": 5400000,
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 290 },
+      { "name": "3 star", "count": 720 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 16880 }
+    ]
+  }
+]
