@@ -4,9 +4,11 @@ import PlaystoreLogo from "../assets/playstore.png";
 import AppStoreLogo from "../assets/apps-store.png";
 import useAllApps from "../Hooks/AllApps";
 import AppsCard from "../Components/AppsCard/AppsCard";
+import { Link } from "react-router";
 
 const Home = () => {
   const { appsData, loading, error } = useAllApps();
+  const fetureApps = appsData.slice(0, 8);
   if (loading) return <p>Loading...</p>;
   console.log(appsData);
   if (error) return <p>Error Hoise</p>;
@@ -68,12 +70,31 @@ const Home = () => {
         </div>
       </div>
 
-          <div>
-              <h1><i class='bxr  bx-trending-up'  ></i> </h1>
-        <div className="grid grid-cols-1 md:gird-cols-2 lg:grid-cols-4 gap-4 p-2">
-          {appsData.map((app) => (
+      <div className="py-10 my-10">
+        <div className="text-center mb-5">
+          <h1 className="font-bold text-2xl md:text-4xl flex items-center justify-center">
+            Trending Apps
+            <span>
+              <i className="bx bx-trending-up text-green-500 text-5xl" />
+            </span>
+          </h1>
+          <p className="text-gray-500">
+            Explore All Trending Apps on the Market developed by us{" "}
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:gird-cols-2 lg:grid-cols-4 gap-4 md:gap-8 p-2">
+          {fetureApps.map((app) => (
             <AppsCard key={app.id} app={app}></AppsCard>
           ))}
+        </div>
+
+        <div className="text-center mt-10">
+          <Link
+            className="px-5 btn bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] text-white"
+            to="/apps"
+          >
+            Show All
+          </Link>
         </div>
       </div>
     </div>

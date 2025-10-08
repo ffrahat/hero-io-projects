@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../../assets/logo.png";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import './Navbar.css'
 const Navbar = () => {
   return (
@@ -42,9 +42,10 @@ const Navbar = () => {
 
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">
+          <Link to='/' className="btn btn-ghost text-xl">
             <img className="w-[25px] h-[25px] md:w-[40px] md:h-[40px]" src={Logo} alt="" /> HERO.IO
-          </a>
+          </Link>
+          
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 space-x-10">

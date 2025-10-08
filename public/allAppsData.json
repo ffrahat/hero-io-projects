@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://i.ibb.co.com/spc1qVcZ/App-Error.png",
+    "image": "https://i.ibb.co.com/G474XnK9/download.jpg",
     "title": "Chatly - AI Messenger",
     "companyName": "NovaTech Labs",
     "id": 1,
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1555435026-28d8e85f1e1c?w=400",
+    "image": "https://i.ibb.co.com/Q3CwSvMG/learnX.jpg",
     "title": "LearnX",
     "companyName": "Eduverse Co.",
     "id": 8,
@@ -141,6 +141,222 @@
       { "name": "3 star", "count": 720 },
       { "name": "4 star", "count": 2200 },
       { "name": "5 star", "count": 16880 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/wNkZJ0cC/download.jpg",
+    "title": "Musicify",
+    "companyName": "RhythmLab",
+    "id": 9,
+    "description": "Stream your favorite tracks, create playlists, and discover new artists every day.",
+    "size": 64,
+    "reviews": 25800,
+    "ratingAvg": 4.7,
+    "downloads": 7200000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 620 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 5400 },
+      { "name": "5 star", "count": 17580 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/tGSBNv5/icon.webp",
+    "title": "MindSpace",
+    "companyName": "CalmCore Studios",
+    "id": 10,
+    "description": "Relax, meditate, and improve focus with guided audio sessions and sleep sounds.",
+    "size": 53,
+    "reviews": 15400,
+    "ratingAvg": 4.8,
+    "downloads": 2800000,
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 320 },
+      { "name": "3 star", "count": 770 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 11100 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?w=400",
+    "title": "CookMate",
+    "companyName": "FlavorSync",
+    "id": 11,
+    "description": "Find and share recipes, plan meals, and generate grocery lists automatically.",
+    "size": 77,
+    "reviews": 8900,
+    "ratingAvg": 4.5,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 270 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2300 },
+      { "name": "5 star", "count": 5080 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=400",
+    "title": "BookNest",
+    "companyName": "LitWorld Inc.",
+    "id": 12,
+    "description": "Read thousands of eBooks, track your reading progress, and join book clubs.",
+    "size": 95,
+    "reviews": 11200,
+    "ratingAvg": 4.6,
+    "downloads": 2400000,
+    "ratings": [
+      { "name": "1 star", "count": 390 },
+      { "name": "2 star", "count": 480 },
+      { "name": "3 star", "count": 1100 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 6730 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/nszJbvbg/Shopy.png",
+    "title": "Shoply",
+    "companyName": "Trendify Global",
+    "id": 13,
+    "description": "Smart shopping app with daily deals, secure checkout, and instant cashback offers.",
+    "size": 58,
+    "reviews": 19800,
+    "ratingAvg": 4.4,
+    "downloads": 4100000,
+    "ratings": [
+      { "name": "1 star", "count": 640 },
+      { "name": "2 star", "count": 740 },
+      { "name": "3 star", "count": 1800 },
+      { "name": "4 star", "count": 5100 },
+      { "name": "5 star", "count": 11520 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/chwgS4B4/download.jpg",
+    "title": "PetPal",
+    "companyName": "FurFriends Co.",
+    "id": 14,
+    "description": "Adopt pets, track vaccinations, and find nearby vets for your furry companions.",
+    "size": 63,
+    "reviews": 7800,
+    "ratingAvg": 4.3,
+    "downloads": 970000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 380 },
+      { "name": "3 star", "count": 980 },
+      { "name": "4 star", "count": 2300 },
+      { "name": "5 star", "count": 3890 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?w=400",
+    "title": "QuickDoc",
+    "companyName": "MediCare Tech",
+    "id": 15,
+    "description": "Book doctor appointments, chat with professionals, and access digital prescriptions.",
+    "size": 71,
+    "reviews": 13200,
+    "ratingAvg": 4.7,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 310 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 860 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 8830 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/vCXNMb08/images.png",
+    "title": "DriveSafe",
+    "companyName": "AutoMind Systems",
+    "id": 16,
+    "description": "Monitor your driving habits, earn safety rewards, and get real-time road alerts.",
+    "size": 80,
+    "reviews": 6400,
+    "ratingAvg": 4.1,
+    "downloads": 750000,
+    "ratings": [
+      { "name": "1 star", "count": 320 },
+      { "name": "2 star", "count": 440 },
+      { "name": "3 star", "count": 980 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 2860 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/ZpZWM01p/download.jpg",
+    "title": "Newsly",
+    "companyName": "InfoStream Media",
+    "id": 17,
+    "description": "Get personalized news updates, trending stories, and breaking alerts in real-time.",
+    "size": 46,
+    "reviews": 17500,
+    "ratingAvg": 4.5,
+    "downloads": 3600000,
+    "ratings": [
+      { "name": "1 star", "count": 510 },
+      { "name": "2 star", "count": 680 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 4200 },
+      { "name": "5 star", "count": 11110 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/gZ1SrcpF/download.jpg",
+    "title": "Evently",
+    "companyName": "PlanSmart Co.",
+    "id": 18,
+    "description": "Discover nearby events, buy tickets, and manage your calendar with AI suggestions.",
+    "size": 67,
+    "reviews": 9300,
+    "ratingAvg": 4.6,
+    "downloads": 1900000,
+    "ratings": [
+      { "name": "1 star", "count": 210 },
+      { "name": "2 star", "count": 330 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 2400 },
+      { "name": "5 star", "count": 5560 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/mrQ2mzHz/download.png",
+    "title": "Weatherly",
+    "companyName": "SkyTrack Systems",
+    "id": 19,
+    "description": "Accurate forecasts, live radar, and AI-based weather prediction at your fingertips.",
+    "size": 44,
+    "reviews": 20200,
+    "ratingAvg": 4.7,
+    "downloads": 5200000,
+    "ratings": [
+      { "name": "1 star", "count": 340 },
+      { "name": "2 star", "count": 480 },
+      { "name": "3 star", "count": 1050 },
+      { "name": "4 star", "count": 2700 },
+      { "name": "5 star", "count": 15630 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/3y0R1YMt/download.png",
+    "title": "HomeHub",
+    "companyName": "SmartNest IoT",
+    "id": 20,
+    "description": "Control your smart home devices, monitor energy use, and automate daily routines.",
+    "size": 92,
+    "reviews": 12400,
+    "ratingAvg": 4.4,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 260 },
+      { "name": "2 star", "count": 420 },
+      { "name": "3 star", "count": 970 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 6250 }
     ]
   }
 ]
