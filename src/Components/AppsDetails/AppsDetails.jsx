@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import useAllApps from "../../Hooks/AllApps";
 import Loading from "../Loading/Loading";
@@ -15,17 +15,31 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+import AppError from "../Error/AppError";
 
 const AppsDetails = () => {
   const { id } = useParams();
   const [install, setInstall] = useState(false);
   console.log(install);
+
   const { appsData, loading, error } = useAllApps();
+
+  useEffect(() => {
+    const existingList = JSON.parse(localStorage.getItem("installed"));
+    if (!existingList) return;
+
+    if (existingList.some((a) => a.id === Number(id))) {
+      setInstall(true);
+    }
+  }, []);
+
   if (loading) return <Loading />;
   //   console.log(appsData);
   if (error) return <p>Error Hoise</p>;
 
   const app = appsData.find((a) => a.id === Number(id));
+  if (!app) return <AppError></AppError>;
+
   const {
     title,
     description,
@@ -91,7 +105,11 @@ const AppsDetails = () => {
           <div>
             <button
               onClick={handleInstall}
-              className="btn bg-[#00d390] text-white"
+              className={`btn  text-white ${
+                install
+                  ? "bg-gray-400 cursor-not-allowed hover:bg-gray-400" // Installed style
+                  : "bg-[#00d390] hover:bg-[#00c080]"
+              }`}
             >
               {install ? "Installed" : `Install Now (${size} MB)`}
             </button>
